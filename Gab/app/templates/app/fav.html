@@ -1,0 +1,28 @@
+{% extends 'app\base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1>My Favorite Music and Food</h1>
+    <ul class="list">
+        <li>
+            <h2>Favorite Artist</h2>
+            <img src= "{% static 'images/taylor.jpg' %}" alt="taylor" class="image">
+            <h2>All time favorite song</h2>
+            <img src="{% static 'images/favsong.jpg' %}" alt="taylor" class="image">
+            <p>
+                <strong>Genre:</strong> Love Songs<br>
+                <strong>Artists:</strong> Ariana Grande, Bruno Mars, Bruno Major, Billie Eilish, Coldplay, The Weekend, Cigarettes after sex <br>
+                <strong>Songs:</strong> Lover, Yellow, Bored, Sweet, Apocalypse, Everything, Nothing, One of the Girls, End of Beginning, Slut
+            </p>
+            <h2>Favorite Food</h2>
+            <img src="{% static 'images/rocky.jpg' %}" alt="MCDO" class="image">
+            <p>
+                <strong>Dishes:</strong> Chicken, Burger, Fries, Donuts<br>
+                <strong>Dessert:</strong> Rocky road Ice cream, Cake<br>
+                <strong>Restaurant:</strong> MCDO
+            </p>
+        </li>
+    </ul>
+
+</div>
+{% endblock content %}
